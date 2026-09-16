@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Igor Sandini — Game QA portfolio: exploratory testing, gameplay bugs and evidence-driven defect reports.">
+<title>IGOR // GAME QA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="fx-grid"></div><div class="scan"></div><div class="grain"></div>
+<header class="nav">
+  <a class="logo" href="#top"><span class="logo-top"><i></i><b></b></span><strong>IGOR</strong><em>// QA</em></a>
+  <div class="nav-center"><a href="#cases" data-i18n="navCases">BUG DECK</a><a href="#skills" data-i18n="navSkills">LOADOUT</a><a href="#about" data-i18n="navAbout">PROFILE</a></div>
+  <button class="lang" id="langToggle">PT-BR</button>
+</header>
+<main id="top">
+<section class="hero wrap">
+  <div class="hero-left">
+    <div class="system-line"><span class="pulse"></span><span>QA-UNIT // 001</span><b>ONLINE</b></div>
+    <div class="eyebrow" data-i18n="eyebrow">GAME QA · EXPLORATORY TESTING · BATTLE SYSTEMS</div>
+    <h1><span data-i18n="heroA">SPIN.</span><span class="cyan" data-i18n="heroB">DRAW.</span><span data-i18n="heroC">DEBUG.</span></h1>
+    <p class="hero-sub" data-i18n="heroText">I hunt for the interactions players should never see — then turn them into clear, reproducible QA evidence.</p>
+    <div class="hero-actions"><a class="btn primary" href="#cases" data-i18n="viewCases">ENTER THE BUG DECK ↓</a><a class="btn" href="#about" data-i18n="aboutMe">VIEW PROFILE</a></div>
+    <div class="hero-readout"><span>MODE</span><strong>EXPLORATION</strong><span>FOCUS</span><strong>EDGE CASES</strong><span>OUTPUT</span><strong>REPRODUCIBLE EVIDENCE</strong></div>
+  </div>
+  <div class="hero-right">
+    <div class="arena-card">
+      <div class="card-head"><span>DUEL / TEST / REPEAT</span><span>01</span></div>
+      <div class="arena">
+        <div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div>
+        <div class="top"><div class="top-ring r1"></div><div class="top-ring r2"></div><div class="top-ring r3"></div><div class="top-core"></div><span class="blade"></span></div>
+        <div class="target">TARGET<br><b>EDGE CASE</b></div>
+        <div class="speed">RPM <b>∞</b></div>
+      </div>
+      <div class="card-foot"><div><small>UNIT</small><strong>IGOR // QA</strong></div><div class="stamp">BATTLE<br>READY</div></div>
+    </div>
+    <div class="mini-hud"><span>SYS</span><i></i><span>COLLISION</span><i></i><span>STATE</span><i></i><span>INPUT</span></div>
+  </div>
+</section>
+<section class="ticker"><div>◉ SPIN</div><div>◈ DRAW</div><div>△ TEST</div><div>▣ REPEAT</div><div>✦ REPORT</div><div>◉ SPIN</div><div>◈ DRAW</div></section>
+<section class="wrap arena-intro" id="cases">
+  <div class="section-top"><div><span class="section-no">01</span><span data-i18n="casesLabel">BUG DECK // FIELD FINDINGS</span></div><span class="micro">3 CARDS · VIDEO EVIDENCE</span></div>
+  <div class="section-title"><h2 data-i18n="casesTitle">THREE FINDINGS.<br><span>THREE WAYS TO BREAK THE FLOW.</span></h2><p data-i18n="casesText">Real gameplay findings documented as reproducible QA cases — from movement collisions to a boss that refuses to stay dead.</p></div>
+  <div class="deck-grid">
+    <article class="qa-card featured-card critical-card">
+      <div class="card-rarity"><span>★ ★ ★ ★ ★</span><b>CRITICAL</b><em>LEGENDARY FIND</em></div>
+      <div class="video-wrap"><video controls preload="metadata" poster="assets/posters/bug-003.jpg"><source src="assets/videos/bug-003-boss-death-state.mp4" type="video/mp4"></video><span class="video-label">EVIDENCE // 03</span></div>
+      <div class="qa-card-body"><div class="bug-id">BUG // 003 <span>GAMEPLAY / BOSS LOGIC</span></div><h3 data-i18n="bug3Title">Boss remains active and can damage player after death</h3><p data-i18n="bug3Short">A timing interaction involving TAB during the boss introduction allows the boss to be defeated before its normal encounter sequence completes. Its abilities can continue after death.</p><div class="card-stats"><span><small>TYPE</small>STATE BREAK</span><span><small>IMPACT</small>PLAYER DEATH</span></div><button class="inspect" data-modal="bug3"><span data-i18n="inspect">INSPECT CARD</span> ↗</button></div>
+    </article>
+    <article class="qa-card major-card">
+      <div class="card-rarity"><span>★ ★ ★ ★</span><b>MAJOR</b><em>EPIC FIND</em></div>
+      <div class="video-wrap"><video controls preload="metadata" poster="assets/posters/bug-001.jpg"><source src="assets/videos/bug-001-dash-stuck.mp4" type="video/mp4"></video><span class="video-label">EVIDENCE // 01</span></div>
+      <div class="qa-card-body"><div class="bug-id">BUG // 001 <span>MOVEMENT / COLLISION</span></div><h3 data-i18n="bug1Title">Avatar becomes stuck after Dash</h3><p data-i18n="bug1Short">After Dash near an environmental structure, the avatar can become stuck and cannot escape using WASD. A second Dash is required.</p><div class="card-stats"><span><small>TYPE</small>CONTROL LOSS</span><span><small>IMPACT</small>FLOW BREAK</span></div><button class="inspect" data-modal="bug1"><span data-i18n="inspect">INSPECT CARD</span> ↗</button></div>
+    </article>
+    <article class="qa-card minor-card">
+      <div class="card-rarity"><span>★ ★</span><b>MINOR</b><em>RARE FIND</em></div>
+      <div class="video-wrap"><video controls preload="metadata" poster="assets/posters/bug-002.jpg"><source src="assets/videos/bug-002-projectile-wall.mp4" type="video/mp4"></video><span class="video-label">EVIDENCE // 02</span></div>
+      <div class="qa-card-body"><div class="bug-id">BUG // 002 <span>PROJECTILE / COLLISION</span></div><h3 data-i18n="bug2Title">Projectiles pass through environmental boundary</h3><p data-i18n="bug2Short">Projectiles pass through a wall that visually appears to act as a physical boundary, creating an inconsistency between the environment and projectile behavior.</p><div class="card-stats"><span><small>TYPE</small>COLLISION</span><span><small>IMPACT</small>LOW</span></div><button class="inspect" data-modal="bug2"><span data-i18n="inspect">INSPECT CARD</span> ↗</button></div>
+    </article>
+  </div>
+</section>
+<section class="wrap skills" id="skills">
+ <div class="section-top"><div><span class="section-no">02</span><span data-i18n="skillsLabel">LOADOUT // QA SKILLS</span></div><span class="micro">PASSIVE + ACTIVE</span></div>
+ <div class="skills-layout"><div class="skill-intro"><div class="bot-core"><div class="bot-eye"></div></div><h2 data-i18n="skillsTitle">QA <span>LOADOUT</span></h2><p data-i18n="skillsText">The tools and habits behind each finding.</p></div><div class="skill-list">
+ <div class="skill-row"><b>01</b><div><h3 data-i18n="skill1">Exploratory Testing</h3><p data-i18n="skill1p">Free-form interaction with gameplay systems to uncover unexpected behavior.</p></div><span>XP +01</span></div>
+ <div class="skill-row"><b>02</b><div><h3 data-i18n="skill2">Edge Case Testing</h3><p data-i18n="skill2p">Unusual input sequences, timing conditions and state transitions.</p></div><span>XP +02</span></div>
+ <div class="skill-row"><b>03</b><div><h3 data-i18n="skill3">Bug Investigation</h3><p data-i18n="skill3p">Turning observations into reliable reproduction conditions and impact.</p></div><span>XP +03</span></div>
+ <div class="skill-row"><b>04</b><div><h3 data-i18n="skill4">Defect Reporting</h3><p data-i18n="skill4p">Clear descriptions, steps, expected/actual results, severity and evidence.</p></div><span>XP +04</span></div>
+ </div></div>
+</section>
+<section class="wrap profile" id="about">
+ <div class="section-top"><div><span class="section-no">03</span><span data-i18n="aboutLabel">PROFILE // QA UNIT</span></div><span class="micro">STATUS: ONLINE</span></div>
+ <div class="profile-grid"><div class="profile-title"><div class="id-chip">PLAYER ID / IGOR-001</div><h2 data-i18n="aboutTitle">AUTOMATION<br><span>MEETS GAMES.</span></h2></div><div class="profile-copy"><p data-i18n="aboutText">I am a Senior QA Automation Engineer with professional experience across API, web and mobile testing. My automation background includes Java, Selenium, Appium, RestAssured and Cucumber, integrated with CI/CD pipelines.</p><p data-i18n="aboutText2">This portfolio documents my practical exploration of Game QA: investigating gameplay behavior, finding edge cases and communicating defects with reproducible evidence.</p><div class="loadout-tags"><span>JAVA</span><span>SELENIUM</span><span>APPIUM</span><span>RESTASSURED</span><span>CUCUMBER</span><span>JENKINS</span><span>AZURE DEVOPS</span><span>GITHUB ACTIONS</span></div></div></div>
+</section>
+<footer class="footer wrap"><div><strong>IGOR <i>// QA</i></strong><span data-i18n="footerText">Game QA Portfolio · Exploratory Testing</span></div><a href="#top">↑ TOP</a></footer>
+</main>
+<div class="modal" id="modal" aria-hidden="true"><div class="modal-bg" data-close></div><div class="modal-window"><button class="close" data-close>×</button><div id="modalContent"></div></div></div>
+<script src="script.js"></script>
+</body></html>
