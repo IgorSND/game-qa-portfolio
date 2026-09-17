@@ -41,8 +41,8 @@
 </section>
 <section class="ticker"><div>◉ SPIN</div><div>◈ DRAW</div><div>△ TEST</div><div>▣ REPEAT</div><div>✦ REPORT</div><div>◉ SPIN</div><div>◈ DRAW</div></section>
 <section class="wrap arena-intro" id="cases">
-  <div class="section-top"><div><span class="section-no">01</span><span data-i18n="casesLabel">BUG DECK // FIELD FINDINGS</span></div><span class="micro">3 CARDS · VIDEO EVIDENCE</span></div>
-  <div class="section-title"><h2 data-i18n="casesTitle">THREE FINDINGS.<br><span>THREE WAYS TO BREAK THE FLOW.</span></h2><p data-i18n="casesText">Real gameplay findings documented as reproducible QA cases — from movement collisions to a boss that refuses to stay dead.</p></div>
+  <div class="section-top"><div><span class="section-no">01</span><span data-i18n="casesLabel">BUG DECK // FIELD FINDINGS</span></div><span class="micro" data-i18n="caseCount">5 CARDS · VIDEO + SCREENSHOT EVIDENCE</span></div>
+  <div class="section-title"><h2 data-i18n="casesTitle">FIVE FINDINGS.<br><span>FIVE WAYS TO BREAK THE FLOW.</span></h2><p data-i18n="casesText">Real gameplay findings documented as reproducible QA cases — from movement and combat edge cases to localization defects found during a Steam playtest.</p></div>
   <div class="deck-grid">
     <article class="qa-card featured-card critical-card">
       <div class="card-rarity"><span>★ ★ ★ ★ ★</span><b>CRITICAL</b><em>LEGENDARY FIND</em></div>
@@ -58,6 +58,17 @@
       <div class="card-rarity"><span>★ ★</span><b>MINOR</b><em>RARE FIND</em></div>
       <div class="video-wrap"><video controls preload="metadata" poster="assets/posters/bug-002.jpg"><source src="assets/videos/bug-002-projectile-wall.mp4" type="video/mp4"></video><span class="video-label">EVIDENCE // 02</span></div>
       <div class="qa-card-body"><div class="bug-id">BUG // 002 <span>PROJECTILE / COLLISION</span></div><h3 data-i18n="bug2Title">Projectiles pass through environmental boundary</h3><p data-i18n="bug2Short">Projectiles pass through a wall that visually appears to act as a physical boundary, creating an inconsistency between the environment and projectile behavior.</p><div class="card-stats"><span><small>TYPE</small>COLLISION</span><span><small>IMPACT</small>LOW</span></div><button class="inspect" data-modal="bug2"><span data-i18n="inspect">INSPECT CARD</span> ↗</button></div>
+    </article>
+
+    <article class="qa-card lqa-card">
+      <div class="card-rarity"><span>★ ★</span><b>MINOR</b><em>LQA FIND</em></div>
+      <div class="evidence-wrap"><img src="assets/evidence/bug-004-congratulations.jpg" alt="Soulstonia Portuguese Brazil localization issue showing Congratulations in English" loading="lazy"><span class="video-label">SCREENSHOT // 04</span></div>
+      <div class="qa-card-body"><div class="bug-id">BUG // 004 <span>LQA / PT-BR</span></div><h3 data-i18n="bug4Title">“Congratulations!” remains untranslated in PT-BR</h3><p data-i18n="bug4Short">A skill level-up notification mixes Portuguese with an English “Congratulations!” string while the game is set to Portuguese (Brazil).</p><div class="card-stats"><span><small>TYPE</small>LOCALIZATION</span><span><small>IMPACT</small>LOW</span></div><button class="inspect" data-modal="bug4"><span data-i18n="inspect">INSPECT CARD</span> ↗</button></div>
+    </article>
+    <article class="qa-card lqa-card">
+      <div class="card-rarity"><span>★ ★</span><b>MINOR</b><em>LQA FIND</em></div>
+      <div class="evidence-wrap"><img src="assets/evidence/bug-005-objective-categories.jpg" alt="Soulstonia Portuguese Brazil objective category menu with untranslated English labels" loading="lazy"><span class="video-label">SCREENSHOT // 05</span></div>
+      <div class="qa-card-body"><div class="bug-id">BUG // 005 <span>LQA / UI</span></div><h3 data-i18n="bug5Title">Objective categories remain untranslated in PT-BR</h3><p data-i18n="bug5Short">The “Criar Objetivo” menu displays GATHERING, PRODUCTION and COMBAT in English while the rest of the interface is localized to Portuguese.</p><div class="card-stats"><span><small>TYPE</small>LOCALIZATION</span><span><small>IMPACT</small>LOW</span></div><button class="inspect" data-modal="bug5"><span data-i18n="inspect">INSPECT CARD</span> ↗</button></div>
     </article>
   </div>
 </section>

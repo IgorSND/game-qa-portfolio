@@ -1,18 +1,12 @@
-# IGOR // GAME QA Portfolio — V2
+# IGOR // GAME QA Portfolio
 
-A visual Game QA portfolio built around a personal battle-system identity inspired by the energy of spinning-top arenas, trading-card interfaces, and robot diagnostics — without using copyrighted characters, logos, or franchise artwork.
+Personal Game QA portfolio showcasing exploratory testing, gameplay bug investigation, localization QA (LQA), and evidence-driven defect reporting.
 
-## Includes
-- English / Portuguese toggle
-- Three real bug cases
-- Embedded MP4 evidence videos
-- Video posters generated from the supplied footage
-- Full bug-report modal for each case
-- Responsive layout
-- Custom visual identity: SPIN. DRAW. DEBUG.
+## Included cases
+- BUG 001 — Avatar becomes stuck after Dash
+- BUG 002 — Projectiles pass through environmental boundary
+- BUG 003 — Boss remains active after death
+- BUG 004 — “Congratulations!” remains untranslated in PT-BR
+- BUG 005 — Objective categories remain untranslated in PT-BR
 
-## Run locally
-Open `index.html` in a browser. For the most reliable local video playback, use a small local server, e.g. `python -m http.server 8000`.
-
-## Before publishing
-Replace placeholders/links with your real LinkedIn, GitHub and email. Only publish gameplay footage if you have permission and are not violating an NDA or other confidentiality restriction.
+Static site: HTML/CSS/JavaScript. Evidence includes gameplay videos and screenshots.
